@@ -22,9 +22,15 @@ html * {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(47, 51, 54);
-    padding-bottom: 44px;
+    min-height: 60px;
     border-top: none;
     border-bottom: none;
+}
+
+.wd-header-icon {
+    padding-top: 16px;
+    float: right;
+    color: rgb(29, 161, 242);
 }
 
 .wd-row {
@@ -138,6 +144,15 @@ html * {
     text-decoration: none;
 }
 
+i {
+    padding-right: 10px;
+    color: #9f9c9c;
+    font-size: 20px;
+}
+
+.wd-see-more {
+    float: right;
+}
 
 
 

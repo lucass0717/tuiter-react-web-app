@@ -20,13 +20,13 @@ html * {
 }
 
 .fa-search {
-    content:\f002;
-    font-family: "Font Awesome 6 Free";
-    padding: 10px;
+    padding-top: 8px;
     text-align: center;
     font-size: 16px;
     color: grey;
     float: left;
+    position: absolute;
+    left: 50px;
 }
 
 .fa-search::before{
@@ -56,10 +56,8 @@ input#wd-search-input {
 }
 
 .wd-tabs-container {
-    border-bottom: #282c34;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
     padding: 16px 16px 16px 0px;
+    margin-bottom: 3px;
 }
 
 .wd-tab-link {
