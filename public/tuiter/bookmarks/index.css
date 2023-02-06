@@ -1,0 +1,146 @@
+.wd-root {
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 600px;
+    min-width: 600px;
+    background: black   ;
+}
+
+html * {
+    font-family: Arial;
+}
+
+.wd-white-text {
+    color: white;
+}
+
+.wd-grey-text {
+    color: grey;
+}
+
+.wd-header {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    padding-bottom: 44px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.wd-row {
+    clear: both;
+}
+
+.wd-header-text {
+    float: left;
+    width: 50%;
+    padding-left: 16px;
+    padding-top: 12px;
+}
+
+.wd-bookmark-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.wd-bookmark-handle {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wd-bookmark-date {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wd-content-container {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    padding-bottom: 606px;
+}
+
+.wd-profile-image-container {
+    float: left;
+    max-width: 76px;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-right: 12px;
+}
+
+.wd-bookmark-container {
+    float: left;
+    width: 85%;
+}
+
+.wd-bookmark-text-container {
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 5px;
+}
+
+.wd-bookmark-name {
+    font-weight: bold;
+}
+
+.wd-bookmark-image {
+    border: none;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.wd-bookmark-text {
+    padding-right: 16px;
+    padding-bottom: 16px;
+    max-width: 506px;
+}
+
+.wd-bookmark-image-container {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: none;
+    max-width: 504px;
+    min-width: 504px;
+    max-height: 264px;
+}
+
+.wd-image-text-container {
+    padding-left: 12px;
+    padding-right: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    max-width: 480px;
+    min-width: 480px;
+}
+
+.wd-image-title {
+    font-weight: bold;
+}
+
+.wd-stats-container {
+    padding-top: 12px;
+}
+
+.wd-stats-container > a {
+    float: left;
+    width: 25%;
+    text-decoration: none;
+}
+
+
+
+
+
+
+

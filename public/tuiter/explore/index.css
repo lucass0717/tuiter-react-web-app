@@ -20,11 +20,18 @@ html * {
 }
 
 .fa-search {
+    content:\f002;
+    font-family: "Font Awesome 6 Free";
     padding: 10px;
     text-align: center;
     font-size: 16px;
     color: grey;
     float: left;
+}
+
+.fa-search::before{
+    font-size: 20px;
+    color: grey;
 }
 
 input#wd-search-input {
@@ -140,7 +147,7 @@ input#wd-search-input {
 
 .wd-suggested-image-content {
     float: right;
-    width: 100px%;
+    width: 100px;
     padding-right: 16px;
 }
 
