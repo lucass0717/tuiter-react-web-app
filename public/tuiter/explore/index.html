@@ -1,92 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../fontawesome-free-6.2.1-web/css/all.min.css">
-    <link href="index.css"
-          rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="index.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="wd-root">
-        <div class="wd-search-settings-container">
-            <div class="wd-search-container">
-                <i class="fa fa-search"></i>
-                <input id="wd-search-input" type="text" placeholder="Search Twitter">
+    <div class="row pt-3">
+
+<!--        COLUMN 1: NAV       -->
+        <div class="list-group col-xxl-2 ps-5">
+            <a href="explore.html" class="list-group-item pb-2 ">
+                <span><i class="fa-brands fa-twitter"></i></span>
+            </a>
+            <a href="home.html" class="list-group-item pb-2">
+                <span><i class="fa-solid fa-house"></i></span>
+                <span>Home</span>
+            </a>
+            <a href="explore.html" class="list-group-item pb-2 active">
+                <span><i class="fa-solid fa-hashtag"></i></span>
+                <span>Explore</span>
+            </a>
+            <a href="notifications.html" class="list-group-item pb-2">
+                <span><i class="fa-solid fa-bell"></i></span>
+                <span>Notifications</span>
+            </a>
+            <a href="messages.html" class="list-group-item pb-2">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <span>Messages</span>
+            </a>
+            <a href="bookmarks.html" class="list-group-item pb-2">
+                <span><i class="fa-solid fa-bookmark"></i></span>
+                <span>Bookmarks</span>
+            </a>
+            <a href="lists.html" class="list-group-item pb-2">
+                <span><i class="fa-solid fa-list"></i></span>
+                <span>Lists</span>
+            </a>
+            <a href="profile.html" class="list-group-item pb-2">
+                <span><i class="fa-solid fa-user"></i></span>
+                <span>Profile</span>
+            </a>
+            <a href="more.html" class="list-group-item pb-2">
+                <span><i class="fa-solid fa-circle"></i></span>
+                <span>More</span>
+            </a>
+            <button class="btn-override btn btn-primary">
+                Tweet
+            </button>
+        </div>
+
+<!--        COL 2 MAIN CONTENT   -->
+        <div class="col-xxl-6">
+
+<!--            search-->
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" class="form-control" aria-label="Search Twitter">
             </div>
-            <div class="wd-gear-container">
-                <i class="fas fa-gear"></i>
+
+<!--            Tabs    -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html" tabindex="-1">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html" tabindex="-1">Entertainment</a>
+                </li>
+            </ul>
+
+<!--            Image   -->
+            <image class="image-sizing" src="alocacia.jpg"></image>
+
+<!--    MAIN CONTENT TEXT    -->
+            <div class="ps-3">
+                <div class="wd-tweet-container pt-3">
+                    <div class="wd-tweet clearfix">
+                        <div class="wd-tweet-content float-start col-9">
+                            <div class="wd-category">
+                                <strong>
+                                    Web Development
+                                </strong>
+                            </div>
+                            <div class="wd-tweet-title">
+                                <span class="wd-tweet-author">
+                                    <strong>
+                                        ReactJS
+                                    </strong>
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="wd-tweet-time">
+                                     - 2h
+                                </span>
+                            </div>
+                            <div class="wd-tweet-description">
+                                <strong>
+                                    React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
+                                </strong>
+                            </div>
+                            <div class="wd-tweet-count">
+                                123k Tweets
+                            </div>
+                        </div>
+                        <image class="float-end wd-tweet-image-sizing col-3" src="monstera.jpg"></image>
+                    </div>
+                </div>
+
+
+                <div class="wd-tweet-container pt-3">
+                    <div class="wd-tweet clearfix">
+                        <div class="wd-tweet-content float-start col-9">
+                            <div class="wd-category">
+                                <strong>
+                                    Web Development
+                                </strong>
+                            </div>
+                            <div class="wd-tweet-title">
+                                <span class="wd-tweet-author">
+                                    <strong>
+                                        ReactJS
+                                    </strong>
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="wd-tweet-time">
+                                     - 2h
+                                </span>
+                            </div>
+                            <div class="wd-tweet-description">
+                                <strong>
+                                    JavaScript is a programming language that can run on browsers as well as desktops
+                                </strong>
+                            </div>
+                            <div class="wd-tweet-count">
+                                123k Tweets
+                            </div>
+                        </div>
+                        <image class="float-end wd-tweet-image-sizing col-3" src="monstera.jpg"></image>
+                        <div class="float-done"></div>
+                    </div>
+                </div>
+
+
+                <div class="wd-tweet-container pt-3">
+                    <div class="wd-tweet clearfix">
+                        <div class="wd-tweet-content float-start col-9">
+                            <div class="wd-category">
+                                <strong>
+                                    Web Development
+                                </strong>
+                            </div>
+                            <div class="wd-tweet-title">
+                                <span class="wd-tweet-author">
+                                    <strong>
+                                        ReactJS
+                                    </strong>
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="wd-tweet-time">
+                                     - 2h
+                                </span>
+                            </div>
+                            <div class="wd-tweet-description">
+                                <strong>
+                                    JavaScript is a programming language that can run on browsers as well as desktops
+                                </strong>                            </div>
+                            <div class="wd-tweet-count">
+                                123k Tweets
+                            </div>
+                        </div>
+                        <image class="float-end wd-tweet-image-sizing col-3" src="monstera.jpg"></image>
+                        <div class="float-done"></div>
+                    </div>
+                </div>
+
+
+                <div class="wd-tweet-container pt-3">
+                    <div class="wd-tweet clearfix">
+                        <div class="wd-tweet-content float-start col-9">
+                            <div class="wd-category">
+                                <strong>
+                                    Web Development
+                                </strong>
+                            </div>
+                            <div class="wd-tweet-title">
+                                <span class="wd-tweet-author">
+                                    <strong>
+                                        ReactJS
+                                    </strong>
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="wd-tweet-time">
+                                     - 2h
+                                </span>
+                            </div>
+                            <div class="wd-tweet-description">
+                                <strong>
+                                    JavaScript is a programming language that can run on browsers as well as desktops
+                                </strong>                            </div>
+                            <div class="wd-tweet-count">
+                                123k Tweets
+                            </div>
+                        </div>
+                        <image class="float-end wd-tweet-image-sizing col-3" src="monstera.jpg"></image>
+                        <div class="float-done"></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="wd-tabs-container">
-            <span class="wd-tab-container"><a class="wd-tab-link-selected" href="#">For You</a></span>
-            <span class="wd-tab-container"><a class="wd-tab-link" href="#">Trending</a></span>
-            <span class="wd-tab-container"><a class="wd-tab-link" href="#">COVID-19</a></span>
-            <span class="wd-tab-container"><a class="wd-tab-link" href="#">News</a></span>
-            <span class="wd-tab-container"><a class="wd-tab-link" href="#">Sports</a></span>
-            <span class="wd-tab-container"><a class="wd-tab-link" href="#">Entertainment</a></span>
-        </div>
-        <div class="wd-trending-container">
-            <div class="wd-suggested-text-content">
-                <span class="wd-trending-topic wd-suggested-spec">Trending in Plants</span>
-                <p class="wd-suggested-title">Monstera</p>
-                <p class="wd-trending-statistics wd-suggested-spec">55.5K Tweets</p>
-            </div>
-            <div class="wd-ellipses-container">
-                <i class="fa-solid fa-ellipsis"></i>
-            </div>
-        </div>
-        <div class="wd-trending-container">
-            <div class="wd-suggested-text-content">
-                <span class="wd-trending-topic wd-suggested-spec">Trending in Cooking</span>
-                <p class="wd-suggested-title">Kenji Lopez</p>
-                <p class="wd-trending-statistics wd-suggested-spec">1234 Tweets</p>
-            </div>
-            <div class="wd-ellipses-container">
-                <i class="fa-solid fa-ellipsis"></i>
-            </div>
-        </div>
-        <div class="wd-suggested-posts-container">
-            <div class="wd-suggested-text-content">
-                <span>
-                    <image width="16px" height="16px" src="nyTimesIcon.png"></image>
-                </span>
-                <span class="wd-suggested-author">The New York Times</span>
-                <span class="wd-suggested-time wd-suggested-spec"> - Yesterday</span>
-                <p class="wd-suggested-title">How Y'all, Youse and You Guys Talk: What does the way you speak say about where you're from?</p>
-            </div>
-            <div class="wd-suggested-image-content">
-                <image class="wd-image" width="100px" height="100px" src="monstera.jpg"></image>
-            </div>
-        </div>
-        <div class="wd-suggested-posts-container">
-            <div class="wd-suggested-text-content">
-                <p class="wd-trending-topic wd-suggested-spec">CATS - LIVE</p>
-                <p class="wd-suggested-title">CATS: Watch as cats decimate NYT reporter with their cuteness</p>
-            </div>
-            <div class="wd-suggested-image-content">
-                <image class="wd-image" width="100px" height="100px" src="cute-cat.png"></image>
-            </div>
-        </div>
-        <div class="wd-suggested-posts-container">
-            <div class="wd-suggested-text-content">
-                <span>
-                    <image width="16px" height="16px" src="nyTimesIcon.png"></image>
-                </span>
-                <span class="wd-suggested-author">The New York Times</span>
-                <span class="wd-suggested-time wd-suggested-spec"> - 3 hours ago</span>
-                <p class="wd-suggested-title">Wal-Mart Abroad: An investigation into how Wal-Mart used bribery to dominate the market in Mexico.</p>
-            </div>
-            <div class="wd-suggested-image-content">
-                <image class="wd-image" width="100px" height="100px" src="alocacia.jpg"></image>
-            </div>
-        </div>
-        <div class="wd-suggested-posts-container">
-            <div class="wd-suggested-text-content">
-                <p class="wd-trending-topic wd-suggested-spec">U.S. ECONOMY - LIVE</p>
-                <p class="wd-suggested-title">Inside Amazon: Wrestling Big Ideas in a Bruising Workplace</p>
-            </div>
-            <div class="wd-suggested-image-content">
-                <image class="wd-image" width="100px" height="100px" src="cat_pic_1.jpg"></image>
+
+
+<!--        COL 3 SIDE BAR      -->
+        <div class="col-xxl-4">
+            <div>Who to follow</div>
+            <div class="wd-rec-account-container">
+                <div class="wd-rec-account clearfix py-2">
+                    <div class="wd-account-info float-start">
+                        <image class="wd-rec-image-sizing float-start" src="monstera.jpg"></image>
+                        <div class="wd-account-text float-start ps-2">
+                            <div class="wd-rec-account-name">
+                                <strong>Java</strong>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="wd-rec-account-handle">
+                                @Java
+                            </div>
+                        </div>
+                    </div>
+                    <button class="float-end btn btn-primary btn-override mt-2 me-3">Follow</button>
+                </div>
+
+                <div class="wd-rec-account clearfix py-2">
+                    <div class="wd-account-info float-start">
+                        <image class="wd-rec-image-sizing float-start" src="monstera.jpg"></image>
+                        <div class="wd-account-text float-start ps-2">
+                            <div class="wd-rec-account-name">
+                                <strong>Relativity Space</strong>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="wd-rec-account-handle">
+                                @relativityspace
+                            </div>
+                        </div>
+                    </div>
+                    <button class="float-end btn btn-primary btn-override mt-2 me-3">Follow</button>
+                </div>
+
+                <div class="wd-rec-account clearfix py-2">
+                    <div class="wd-account-info float-start">
+                        <image class="wd-rec-image-sizing float-start" src="monstera.jpg"></image>
+                        <div class="wd-account-text float-start ps-2">
+                            <div class="wd-rec-account-name">
+                                <strong>Virgin Galactic</strong>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="wd-rec-account-handle">
+                                @virgingalactic
+                            </div>
+                        </div>
+                    </div>
+                    <button class="float-end btn btn-primary btn-override mt-2 me-3">Follow</button>
+                </div>
+
+                <div class="wd-rec-account clearfix py-2">
+                    <div class="wd-account-info float-start">
+                        <image class="wd-rec-image-sizing float-start" src="monstera.jpg"></image>
+                        <div class="wd-account-text float-start ps-2">
+                            <div class="wd-rec-account-name">
+                                <strong>NASA</strong>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="wd-rec-account-handle">
+                                @NASA
+                            </div>
+                        </div>
+                    </div>
+                    <button class="float-end btn btn-primary btn-override mt-2 me-3">Follow</button>
+                </div>
+
+                <div class="wd-rec-account clearfix py-2">
+                    <div class="wd-account-info float-start">
+                        <image class="wd-rec-image-sizing float-start" src="monstera.jpg"></image>
+                        <div class="wd-account-text float-start ps-2">
+                            <div class="wd-rec-account-name">
+                                <strong>Tesla</strong>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="wd-rec-account-handle">
+                                @Tesla
+                            </div>
+                        </div>
+                    </div>
+                    <button class="float-end btn btn-primary btn-override mt-2 me-3">Follow</button>
+                </div>
+
             </div>
         </div>
     </div>
