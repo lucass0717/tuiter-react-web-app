@@ -8,44 +8,44 @@
     <link href="index.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="row pt-3">
+    <div class="row pt-3 ps-4">
 
 <!--        COLUMN 1: NAV       -->
-        <div class="list-group col-xxl-2 ps-5">
+        <div class="list-group col-2 col-lg-1 col-xl-2">
             <a href="explore.html" class="list-group-item pb-2 ">
                 <span><i class="fa-brands fa-twitter"></i></span>
             </a>
-            <a href="home.html" class="list-group-item pb-2">
-                <span><i class="fa-solid fa-house"></i></span>
-                <span>Home</span>
+            <a href="home.html" class="list-group-item pb-2 clearfix">
+                <span><i class="fa-solid fa-house float-start"></i></span>
+                <span class="ps-2 d-none d-xl-block float-start">Home</span>
             </a>
             <a href="explore.html" class="list-group-item pb-2 active">
-                <span><i class="fa-solid fa-hashtag"></i></span>
-                <span>Explore</span>
+                <span><i class="fa-solid fa-hashtag float-start"></i></span>
+                <span class="ps-2 d-none d-xl-block float-start">Explore</span>
             </a>
             <a href="notifications.html" class="list-group-item pb-2">
-                <span><i class="fa-solid fa-bell"></i></span>
-                <span>Notifications</span>
+                <span><i class="fa-solid fa-bell float-start"></i></span>
+                <span class="ps-2 d-none d-xl-block float-start">Notifications</span>
             </a>
             <a href="messages.html" class="list-group-item pb-2">
-                <span><i class="fa-solid fa-envelope"></i></span>
-                <span>Messages</span>
+                <span><i class="fa-solid fa-envelope float-start"></i></span>
+                <span class="ps-2 d-none d-xl-block float-start">Messages</span>
             </a>
             <a href="bookmarks.html" class="list-group-item pb-2">
-                <span><i class="fa-solid fa-bookmark"></i></span>
-                <span>Bookmarks</span>
+                <span><i class="fa-solid fa-bookmark float-start"></i></span>
+                <span class="ps-2 d-none d-xl-block float-start">Bookmarks</span>
             </a>
             <a href="lists.html" class="list-group-item pb-2">
-                <span><i class="fa-solid fa-list"></i></span>
-                <span>Lists</span>
+                <span><i class="fa-solid fa-list float-start"></i></span>
+                <span class="ps-2 d-none d-xl-block float-start">Lists</span>
             </a>
             <a href="profile.html" class="list-group-item pb-2">
-                <span><i class="fa-solid fa-user"></i></span>
-                <span>Profile</span>
+                <span><i class="fa-solid fa-user float-start"></i></span>
+                <span class="ps-2 d-none d-xl-block float-start">Profile</span>
             </a>
             <a href="more.html" class="list-group-item pb-2">
-                <span><i class="fa-solid fa-circle"></i></span>
-                <span>More</span>
+                <span><i class="fa-solid fa-circle float-start"></i></span>
+                <span class="ps-2 d-none d-xl-block float-start">More</span>
             </a>
             <button class="btn-override btn btn-primary">
                 Tweet
@@ -53,14 +53,15 @@
         </div>
 
 <!--        COL 2 MAIN CONTENT   -->
-        <div class="col-xxl-6">
+        <div class="col-10 col-lg-7 col-xl-6">
 
 <!--            search-->
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="clearfix">
+                <div id="input-group" class="wd-search-container clearfix col-11 float-start">
+                    <i class="pt-2 input-group-text fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="wd-search-field form-control" aria-label="Search Twitter">
                 </div>
-                <input type="text" class="form-control" aria-label="Search Twitter">
+                <i class="col-1 float-end fa-solid fa-gear ps-3 pt-2"></i>
             </div>
 
 <!--            Tabs    -->
@@ -83,7 +84,10 @@
             </ul>
 
 <!--            Image   -->
-            <image class="image-sizing" src="alocacia.jpg"></image>
+            <div id="image-container">
+                <p id="image-description">SpaceX's Starship</p>
+                <image class="image-sizing" src="spaceX.jpg"></image>
+            </div>
 
 <!--    MAIN CONTENT TEXT    -->
             <div class="ps-3">
@@ -117,7 +121,7 @@
                                 123k Tweets
                             </div>
                         </div>
-                        <image class="float-end wd-tweet-image-sizing col-3" src="monstera.jpg"></image>
+                        <image class="float-end wd-tweet-image-sizing col-3" src="react.jpg"></image>
                     </div>
                 </div>
 
@@ -125,15 +129,10 @@
                 <div class="wd-tweet-container pt-3">
                     <div class="wd-tweet clearfix">
                         <div class="wd-tweet-content float-start col-9">
-                            <div class="wd-category">
-                                <strong>
-                                    Web Development
-                                </strong>
-                            </div>
                             <div class="wd-tweet-title">
                                 <span class="wd-tweet-author">
                                     <strong>
-                                        ReactJS
+                                        JavaScript
                                     </strong>
                                 </span>
                                 <span>
@@ -152,7 +151,7 @@
                                 123k Tweets
                             </div>
                         </div>
-                        <image class="float-end wd-tweet-image-sizing col-3" src="monstera.jpg"></image>
+                        <image class="float-end wd-tweet-image-sizing col-3" src="javascript.jpg"></image>
                         <div class="float-done"></div>
                     </div>
                 </div>
@@ -169,7 +168,7 @@
                             <div class="wd-tweet-title">
                                 <span class="wd-tweet-author">
                                     <strong>
-                                        ReactJS
+                                        jQuery
                                     </strong>
                                 </span>
                                 <span>
@@ -179,15 +178,11 @@
                                      - 2h
                                 </span>
                             </div>
-                            <div class="wd-tweet-description">
-                                <strong>
-                                    JavaScript is a programming language that can run on browsers as well as desktops
-                                </strong>                            </div>
                             <div class="wd-tweet-count">
                                 123k Tweets
                             </div>
                         </div>
-                        <image class="float-end wd-tweet-image-sizing col-3" src="monstera.jpg"></image>
+                        <image class="float-end wd-tweet-image-sizing col-3" src="jquery.jpg"></image>
                         <div class="float-done"></div>
                     </div>
                 </div>
@@ -204,7 +199,7 @@
                             <div class="wd-tweet-title">
                                 <span class="wd-tweet-author">
                                     <strong>
-                                        ReactJS
+                                        NodeJS
                                     </strong>
                                 </span>
                                 <span>
@@ -214,15 +209,11 @@
                                      - 2h
                                 </span>
                             </div>
-                            <div class="wd-tweet-description">
-                                <strong>
-                                    JavaScript is a programming language that can run on browsers as well as desktops
-                                </strong>                            </div>
                             <div class="wd-tweet-count">
                                 123k Tweets
                             </div>
                         </div>
-                        <image class="float-end wd-tweet-image-sizing col-3" src="monstera.jpg"></image>
+                        <image class="float-end wd-tweet-image-sizing col-3" src="node.jpg"></image>
                         <div class="float-done"></div>
                     </div>
                 </div>
@@ -231,12 +222,12 @@
 
 
 <!--        COL 3 SIDE BAR      -->
-        <div class="col-xxl-4">
+        <div class="d-none d-lg-block col-lg-4 col-xl-4">
             <div>Who to follow</div>
             <div class="wd-rec-account-container">
                 <div class="wd-rec-account clearfix py-2">
                     <div class="wd-account-info float-start">
-                        <image class="wd-rec-image-sizing float-start" src="monstera.jpg"></image>
+                        <image class="wd-rec-image-sizing float-start" src="java.jpg"></image>
                         <div class="wd-account-text float-start ps-2">
                             <div class="wd-rec-account-name">
                                 <strong>Java</strong>
@@ -252,7 +243,7 @@
 
                 <div class="wd-rec-account clearfix py-2">
                     <div class="wd-account-info float-start">
-                        <image class="wd-rec-image-sizing float-start" src="monstera.jpg"></image>
+                        <image class="wd-rec-image-sizing float-start" src="relativity.jpg"></image>
                         <div class="wd-account-text float-start ps-2">
                             <div class="wd-rec-account-name">
                                 <strong>Relativity Space</strong>
@@ -268,7 +259,7 @@
 
                 <div class="wd-rec-account clearfix py-2">
                     <div class="wd-account-info float-start">
-                        <image class="wd-rec-image-sizing float-start" src="monstera.jpg"></image>
+                        <image class="wd-rec-image-sizing float-start" src="virgin.png"></image>
                         <div class="wd-account-text float-start ps-2">
                             <div class="wd-rec-account-name">
                                 <strong>Virgin Galactic</strong>
@@ -284,7 +275,7 @@
 
                 <div class="wd-rec-account clearfix py-2">
                     <div class="wd-account-info float-start">
-                        <image class="wd-rec-image-sizing float-start" src="monstera.jpg"></image>
+                        <image class="wd-rec-image-sizing float-start" src="nasa.jpg"></image>
                         <div class="wd-account-text float-start ps-2">
                             <div class="wd-rec-account-name">
                                 <strong>NASA</strong>
@@ -300,7 +291,7 @@
 
                 <div class="wd-rec-account clearfix py-2">
                     <div class="wd-account-info float-start">
-                        <image class="wd-rec-image-sizing float-start" src="monstera.jpg"></image>
+                        <image class="wd-rec-image-sizing float-start" src="tesla.jpg"></image>
                         <div class="wd-account-text float-start ps-2">
                             <div class="wd-rec-account-name">
                                 <strong>Tesla</strong>

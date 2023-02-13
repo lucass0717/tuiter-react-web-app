@@ -14,5 +14,48 @@
 
 .wd-rec-image-sizing {
     max-height: 50px;
+    max-width: 50px;
+    object-fit: cover;
     border-radius: 25px;
+}
+
+.fa-magnifying-glass {
+    font-size: 20px;
+    position: absolute;
+    border-right: none;
+}
+
+.wd-search-field {
+    border-left: none;
+    border-radius: 20px;
+}
+
+.wd-search-container {
+    border-radius: 20px;
+}
+
+#input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.fa-gear {
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#image-description {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+
+}
+
+#image-container {
+    position: relative;
 }
