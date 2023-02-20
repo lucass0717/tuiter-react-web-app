@@ -1,0 +1,6 @@
+.wd-rec-image-sizing {
+    min-height: 50px;
+    max-width: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+}

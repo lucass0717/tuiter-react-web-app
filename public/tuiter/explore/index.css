@@ -1,7 +1,3 @@
-.btn-override {
-    border-radius: 20px;
-}
-
 .image-sizing {
     max-width: 100%;
 }
@@ -13,16 +9,20 @@
 }
 
 .wd-rec-image-sizing {
-    max-height: 50px;
+    min-height: 50px;
     max-width: 50px;
     object-fit: cover;
     border-radius: 25px;
 }
 
+
+
 .fa-magnifying-glass {
     font-size: 20px;
     position: absolute;
     border-right: none;
+    left: 10px;
+    top: 1px;
 }
 
 .wd-search-field {
@@ -32,17 +32,11 @@
 
 .wd-search-container {
     border-radius: 20px;
-}
-
-#input-group {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
 }
 
 .fa-gear {
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 20px;
 }
 
