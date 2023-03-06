@@ -1,0 +1,49 @@
+.image-sizing {
+    max-width: 100%;
+}
+
+.wd-tweet-image-sizing {
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 15px;
+}
+
+.wd-rec-image-sizing {
+    min-height: 50px;
+    max-width: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.wd-tweet-container {
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+
+.wd-search-field {
+    border-left: none;
+    border-radius: 20px;
+}
+
+.wd-search-container {
+    border-radius: 20px;
+    position: relative;
+}
+
+#image-description {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+
+}
+
+#image-container {
+    position: relative;
+}
