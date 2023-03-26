@@ -1,9 +1,9 @@
 import React from "react";
-import whoArray from './who.js';
 import WhoToFollowListItem
     from "./who-to-follow-list-item";
-
+import {useSelector} from "react-redux";
 const WhoToFollowList = () => {
+    const whoArray = useSelector((state) => state.who);
     return(
         <>
             <div className={"pb-3"}><strong className="text-black pt-4">Who to follow</strong></div>
