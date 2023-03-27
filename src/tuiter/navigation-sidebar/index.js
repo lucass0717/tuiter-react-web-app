@@ -3,7 +3,7 @@ import navItems from './navItems.json';
 import NavigationItem from "./navigation-item";
 const NavigationSidebar = (
     {
-        active = "Explore"
+        active = "Home"
     }
 ) => {
     return (

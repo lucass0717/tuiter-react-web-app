@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 const NavigationItem = (
     {
         navItem = {
@@ -9,11 +10,14 @@ const NavigationItem = (
     }
 ) => {
     return(
-        <a className={`list-group-item ${navItem.active ? 'active' : ''}`}
-            href="#">
-            <span><i className={`${navItem.icon} float-start`}></i></span>
-            <span className="ps-2 d-none d-xl-block float-start">{navItem.label}</span>
-        </a>
+        <>
+            <Link to={`/tuiter/${navItem.label.toLocaleLowerCase()}`}
+                  className={`list-group-item ${navItem.active ? 'active' : ''}`}>
+                <span><i className={`${navItem.icon} float-start`}></i></span>
+                <span className="ps-2 d-none d-xl-block float-start">{navItem.label}</span>
+            </Link>
+        </>
+
     );
 };
 export default NavigationItem;

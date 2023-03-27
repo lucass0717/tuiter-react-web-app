@@ -12,7 +12,7 @@ const WhoToFollowList = () => {
                 {
                     whoArray.map(who =>
                         <WhoToFollowListItem
-                            key={who._id}
+                            key={who.handle}
                             who={who}/>
                     )
                 }
