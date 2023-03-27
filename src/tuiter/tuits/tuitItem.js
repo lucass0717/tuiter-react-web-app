@@ -43,6 +43,8 @@ const TuitItem = (
                         <strong className="pe-2">
                             {tuit.userName}
                         </strong>
+                        <i className="bi bi-check-circle-fill pe-2"></i>
+                        <span>· </span>
                         {tuit.handle} {tuit.time}
                     </div>
 

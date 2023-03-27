@@ -4,7 +4,7 @@ import tuits from '../tuits/tuits';
 const currentUser = {
     "userName": "NASA",
     "handle": "@nasa",
-    "image": "nasa.png",
+    "image": "nasa.jpg",
 };
 
 const templateTuit = {
