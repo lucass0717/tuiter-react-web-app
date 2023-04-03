@@ -18,7 +18,7 @@ import HomeComponent from "./home";
 import {Route, useParams} from "react-router";
 import Explore from "./explore";
 const store = configureStore({
-    reducer: {who: whoReducer, tuits:tuitsReducer, explorePosts:exploreReducer}
+    reducer: {who: whoReducer, tuitsData:tuitsReducer, explorePosts:exploreReducer}
 });
 
 
